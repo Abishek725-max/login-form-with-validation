@@ -1,16 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Login from "./pages/Login";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Dashboard from "./pages/Dashboard"
+import './App.css';
+import Home from './Home';
+import React from 'react';
+import ToastShow from './toast';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Route exact path="/login" component={Login} />
-		<Route exact path="/" component={Dashboard} />
-      </BrowserRouter>
+    <div className="App">
+      <Home />
+      <ToastShow />
     </div>
   );
 }
